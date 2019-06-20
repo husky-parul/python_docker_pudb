@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  demo_app:
+    image: singhp11/dockerpudb
+    volumes: 
+      - ./demo:/usr/src/app/demo
+    command: python3 /usr/src/app/demo/app.py
+    stdin_open: true
+    tty: true
